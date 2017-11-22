@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2.controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="361.883" Width="525" Foreground="White" BorderBrush="White">
+    <Grid RenderTransformOrigin="0.477,0.511">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="btnButton1" FontSize="80" Content="" Grid.Column="0" HorizontalAlignment="Left" Grid.Row="0" VerticalAlignment="Top" Width="172" Height="106" Click="btnButton1_Click" Background="#FF2818C3" BorderBrush="#FFD61414"/>
+        <Button Name="btnButton2" FontSize="80" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="0" VerticalAlignment="Top" Width="172" Height="106" Click="btnButton2_Click" Background="#FF2818C3" BorderBrush="#FFD61414"/>
+        <Button Name="btnButton3" FontSize="80" Content="" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="0" VerticalAlignment="Top" Width="173" Height="106" Click="btnButton3_Click" Background="#FF2818C3" BorderBrush="#FFD61414"/>
+        <Button Name="btnButton4" FontSize="80" Content="" Grid.Column="0" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="172" Height="106" Click="btnButton4_Click" Background="#FF2818C3" BorderBrush="#FFD61414"/>
+        <Button Name="btnButton5" FontSize="80" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="172" Height="106" Click="btnButton5_Click" Background="#FF2414C7" Foreground="Black" BorderBrush="#FFD61414"/>
+        <Button Name="btnButton6" FontSize="80" Content="" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="173" Height="106" Click="btnButton6_Click" BorderBrush="#FFD61414" Background="#FF2818C3"/>
+        <Button Name="btnButton7" FontSize="80" Content="" Grid.Column="0" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="172" Height="107" Click="btnButton7_Click" Background="#FF2818C3" BorderBrush="#FFD61414"/>
+        <Button Name="btnButton8" FontSize="80" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="172" Height="107" Click="btnButton8_Click" Background="#FF2818C3" BorderBrush="#FFD61414"/>
+        <Button Name="btnButton9" FontSize="80" Content="" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="173" Height="107" Click="btnButton9_Click" Background="#FF2818C3" BorderBrush="#FFD61414"/>
+        <Button Content="Reset The Game" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="517" Grid.ColumnSpan="3" Height="25" Background="#FF850606" Foreground="White" Click="Button_Click"/>
+
+
+
+
     </Grid>
 </Window>
