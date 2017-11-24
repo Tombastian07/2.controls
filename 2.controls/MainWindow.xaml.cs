@@ -27,7 +27,7 @@ namespace _2.controls
 
         public bool Imige = false;
 
-        private void btnButton1_Click(object sender, RoutedEventArgs e)
+        public void btnButton1_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton1.Content.ToString() == "")
             {
@@ -42,9 +42,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton2_Click(object sender, RoutedEventArgs e)
+        public void btnButton2_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton2.Content.ToString() == "")
             {
@@ -59,9 +60,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton3_Click(object sender, RoutedEventArgs e)
+        public void btnButton3_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton3.Content.ToString() == "")
             {
@@ -76,9 +78,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton4_Click(object sender, RoutedEventArgs e)
+        public void btnButton4_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton4.Content.ToString() == "")
             {
@@ -93,9 +96,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton5_Click(object sender, RoutedEventArgs e)
+        public void btnButton5_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton5.Content.ToString() == "")
             {
@@ -110,9 +114,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton6_Click(object sender, RoutedEventArgs e)
+        public void btnButton6_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton6.Content.ToString() == "")
             {
@@ -127,9 +132,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton7_Click(object sender, RoutedEventArgs e)
+        public void btnButton7_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton7.Content.ToString() == "")
             {
@@ -144,9 +150,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton8_Click(object sender, RoutedEventArgs e)
+        public void btnButton8_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton8.Content.ToString() == "")
             {
@@ -161,9 +168,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void btnButton9_Click(object sender, RoutedEventArgs e)
+        public void btnButton9_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton9.Content.ToString() == "")
             {
@@ -178,9 +186,10 @@ namespace _2.controls
                     Imige = false;
                 }
             }
+            Winner();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             btnButton1.Content = "";
             btnButton2.Content = "";
@@ -191,6 +200,30 @@ namespace _2.controls
             btnButton7.Content = "";
             btnButton8.Content = "";
             btnButton9.Content = "";
+        }
+        public void Winner()
+        {
+            string test = "X";
+            Winner1(test);
+            test = "0";
+            Winner1(test);
+        }
+        public void Winner1(string test)
+        {
+            if (btnButton1.Content.ToString() == test && btnButton2.Content.ToString() == test && btnButton3.Content.ToString() == test || btnButton4.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton6.Content.ToString() == test || btnButton7.Content.ToString() == test && btnButton8.Content.ToString() == test && btnButton9.Content.ToString() == test
+            || btnButton1.Content.ToString() == test && btnButton4.Content.ToString() == test && btnButton7.Content.ToString() == test || btnButton2.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton8.Content.ToString() == test || btnButton3.Content.ToString() == test && btnButton6.Content.ToString() == test && btnButton6.Content.ToString() == test
+            || btnButton1.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton9.Content.ToString() == test || btnButton3.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton7.Content.ToString() == test)
+            {
+                if (test == "X")
+                {
+                    MessageBox.Show(" X je hebt gewonnen", "Gefeliciteerd");
+                }
+                else
+                {
+                    MessageBox.Show(" 0 je hebt gewonnen", "Gefeliciteerd");
+                }
+                Button_Click(null, null);
+            }
         }
     }
 }
