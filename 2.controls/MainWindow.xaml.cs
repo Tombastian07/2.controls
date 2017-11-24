@@ -211,7 +211,7 @@ namespace _2.controls
         public void Winner1(string test)
         {
             if (btnButton1.Content.ToString() == test && btnButton2.Content.ToString() == test && btnButton3.Content.ToString() == test || btnButton4.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton6.Content.ToString() == test || btnButton7.Content.ToString() == test && btnButton8.Content.ToString() == test && btnButton9.Content.ToString() == test
-            || btnButton1.Content.ToString() == test && btnButton4.Content.ToString() == test && btnButton7.Content.ToString() == test || btnButton2.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton8.Content.ToString() == test || btnButton3.Content.ToString() == test && btnButton6.Content.ToString() == test && btnButton6.Content.ToString() == test
+            || btnButton1.Content.ToString() == test && btnButton4.Content.ToString() == test && btnButton7.Content.ToString() == test || btnButton2.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton8.Content.ToString() == test || btnButton3.Content.ToString() == test && btnButton6.Content.ToString() == test && btnButton9.Content.ToString() == test
             || btnButton1.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton9.Content.ToString() == test || btnButton3.Content.ToString() == test && btnButton5.Content.ToString() == test && btnButton7.Content.ToString() == test)
             {
                 if (test == "X")
