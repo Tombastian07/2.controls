@@ -224,6 +224,10 @@ namespace _2.controls
                 }
                 Button_Click(null, null);
             }
+            else if ((string)btnButton1.Content != "" && (string)btnButton2.Content != "" && (string)btnButton3.Content != "" && (string)btnButton4.Content != "" && (string)btnButton5.Content != "" && (string)btnButton6.Content != "" && (string)btnButton7.Content != "" && (string)btnButton8.Content != "" && (string)btnButton9.Content != "") 
+            {
+                MessageBox.Show("Het is gelijkspel", "Probeer opnieuw");
+            }
         }
     }
 }
