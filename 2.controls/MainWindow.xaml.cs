@@ -135,8 +135,8 @@ namespace _2.controls
             {
                 if (Imige == false)
                 {
-                    btnButton6.Content = "O";
-                    txtPlayerTurn.Text = "Player turn: 0";
+                    btnButton6.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                 }
                 else if (Imige == true)
                 {
